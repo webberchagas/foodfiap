@@ -41,6 +41,6 @@ public class UserModel {
     private LocalDateTime created_at;
     private LocalDateTime updated_at;
 
-    @OneToMany(mappedBy = "user_id")
+    @OneToMany(mappedBy = "user")
     private Set<AddressModel> addresses = new HashSet<>();
 }
